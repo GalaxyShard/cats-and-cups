@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+#main-container {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.2em;
+    margin: 140px auto 0 auto;
+    text-align: center;
+    width: calc(100% - 100px);
+    transition: margin-top 0.5s ease;
+}
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height:120px;
+    padding: 10px 5px 0 65px;
+    background-color:#bdd09f;
+    /* background-color: hsl(0, 0%, 90%); */
+    border-bottom: #000000 3px solid;
+
+    transition: height 0.5s ease;
+}
+#nav > a {
+    text-decoration: none;
+    color: #000000;
+
+    display:inline-block;
+    padding:3px 12px 3px 12px;
+}
+#nav > a > span {
+    transition: transform 0.1s linear;
+    display:inline-block;
+}
+#nav > a:hover > span {
+    transform:translate(0, -5px);
+}
+#nav > img {
+    position:fixed;
+    top:15px;
+    left:15px;
+    height: 45px;
+}
+h1 {
+    font-size:2em;
+}
+/* .drinks, .locations, .foods { */
+.menu {
+    border-radius:5px;
+    background-color:#bdd09f;
+    /* background-color:hsl(0, 0%, 90%); */
+}
+/* .drinks > div, .locations > div, .foods > div { */
+.menu > div {
+    padding:10px;
+}
+/* .drinks img, .foods img { */
+.menu img {
+    height:auto;
+    max-height:200px;
+    max-width:calc(100% - 5px);
+}
+#logo {
+    display: block;
+    width: 200px;
+    margin: 0 auto 0 auto;
+}
+
+@media (min-width:370px) {
+    #nav {
+        height:80px;
+    }
+    #main-container {
+        margin-top:100px;
+    }
+}
+
+/* Generic */
+img {
+    border-radius:5px;
+    border:2px solid #000000;
+}
+.center {
+    text-align: center;
+}
+.cursive {
+    font-family:"Dancing Script",cursive;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight:normal;
+    margin:5px;
+}
