@@ -11,9 +11,7 @@ nav.id = "nav";
 document.getElementById("main-container").appendChild(nav);
 
 let image = document.createElement("img");
-// new: https://i.imgur.com/Sfx0vKI.png
-// old: https://i.imgur.com/kll6b2p.png
-image.src = "https://i.imgur.com/Sfx0vKI.png";
+image.src = "images/logo-small.png";
 image.alt = "logo";
 nav.appendChild(image);
 
@@ -23,7 +21,6 @@ for (let i = 0; i < links.length; i++)
     span.innerHTML = links[i].name;
 
     let a = document.createElement("a");
-    //a.innerHTML = links[i].name;
     a.href = links[i].link;
     a.appendChild(span);
     nav.appendChild(a);
