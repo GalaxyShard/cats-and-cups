@@ -1,11 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-#main-container {
-    font-family: "Courier New", Courier, monospace;
+#main-container, #nav {
+    font-family: Courier, monospace;
     font-size: 1.2em;
-    margin: 140px auto 0 auto;
     text-align: center;
+}
+#main-container {
+    margin: 140px auto 0 auto;
     width: calc(100% - 100px);
     transition: margin-top 0.5s ease;
 }
@@ -15,8 +17,10 @@
     left: 0;
     right: 0;
     overflow: hidden;
+
     height:120px;
     padding: 10px 5px 0 65px;
+
     background-color:#bdd09f;
     border-bottom: #000000 3px solid;
 
@@ -82,7 +86,7 @@ img {
     text-align: center;
 }
 .cursive {
-    font-family:"Dancing Script",cursive;
+    font-family:"Dancing Script", cursive;
 }
 h1,h2,h3,h4,h5,h6 {
     font-weight:normal;
