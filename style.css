@@ -7,24 +7,22 @@
     text-align: center;
 }
 #main-container {
-    margin: 140px auto 0 auto;
+    margin: 20px auto 0 auto;
     width: calc(100% - 100px);
     transition: margin-top 0.5s ease;
 }
 #nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    overflow: hidden;
+    z-index:1;
 
-    height:120px;
+    min-height:75px; /* logo height + padding */
     padding: 10px 5px 0 65px;
 
     background-color:#bdd09f;
     border-bottom: #000000 3px solid;
-
-    transition: height 0.5s ease;
 }
 #nav > a {
     text-decoration: none;
@@ -41,9 +39,11 @@
     transform:translate(0, -5px);
 }
 #nav > img {
-    position:fixed;
+    position:absolute;
     top:15px;
     left:15px;
+    bottom:15px;
+    object-fit:contain;
     height: 45px;
 }
 h1 {
@@ -66,15 +66,6 @@ h1 {
     display: block;
     width: 200px;
     margin: 0 auto 0 auto;
-}
-
-@media (min-width:370px) {
-    #nav {
-        height:80px;
-    }
-    #main-container {
-        margin-top:100px;
-    }
 }
 
 /* Generic */
